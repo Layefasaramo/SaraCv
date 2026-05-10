@@ -1,0 +1,157 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dropzone {
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.dropzone:hover {
+  border-color: var(--green-dim);
+  background: var(--bg-card-hover);
+}
+
+.dropzone.dragging {
+  border-color: var(--green);
+  background: var(--green-glow);
+  box-shadow: 0 0 24px var(--green-glow-strong);
+}
+
+.dropzone.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.iconWrap {
+  color: var(--green);
+  margin-bottom: 4px;
+  filter: drop-shadow(0 0 12px var(--green-glow-strong));
+}
+
+.label {
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.or {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--text-secondary);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.browseBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.browseBtn:hover {
+  border-color: var(--green-dim);
+  color: var(--green);
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.security {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.ctaCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.ctaText {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.ctaBrand {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.analyzeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px;
+  background: var(--green);
+  color: #080d0a;
+  border-radius: 10px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 0 20px var(--green-glow-strong);
+}
+
+.analyzeBtn:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 32px var(--green-glow-strong);
+  transform: translateY(-1px);
+}
+
+.analyzeBtnDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.formats {
+  font-size: 11px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root.dark-mode,
+:root:not(.light-mode) {
+  --bg-base: #080d0a;
+  --bg-surface: #0d1410;
+  --bg-card: #111a14;
+  --bg-card-hover: #162019;
+  --bg-elevated: #1a2a1e;
+  --border: #1e3024;
+  --border-muted: #152019;
+  --green: #22c55e;
+  --green-dim: #16a34a;
+  --green-glow: rgba(34, 197, 94, 0.15);
+  --green-glow-strong: rgba(34, 197, 94, 0.3);
+  --text-primary: #e8f5ec;
+  --text-secondary: #7a9e82;
+  --text-muted: #4a6b52;
+}
+
+:root.light-mode {
+  --bg-base: #d1d6d3;
+  --bg-surface: #f2f5f3;
+  --bg-card: #ebf0ed;
+  --bg-card-hover: #e1e8e4;
+  --bg-elevated: #dce3df;
+  --border: #b8c4bc;
+  --border-muted: #cbd6ce;
+  --green: #15803d;
+  --green-dim: #166534;
+  --green-glow: rgba(21, 128, 61, 0.12);
+  --green-glow-strong: rgba(21, 128, 61, 0.25);
+  --text-primary: #0d140f;
+  --text-secondary: #2d3d32;
+  --text-muted: #4a5c50;
+}
+
+:root {
+  --sidebar-width: 220px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+  background: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: var(--font-body);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
