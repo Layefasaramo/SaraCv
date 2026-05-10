@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import toast from "react-hot-toast";
-import { matchJobDescription } from "../lib/gemini";
+import { matchJobDescription } from "../lib/llm";
 import type { JobMatchResult } from "../types";
 
 export function useJobMatch() {

@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import toast from "react-hot-toast";
 import { extractTextFromPdf } from "../lib/pdfParser";
-import { analyzeResume, matchJobDescription } from "../lib/gemini";
+import { analyzeResume, matchJobDescription } from "../lib/llm";
 import { uploadResumePdf } from "../lib/Supabase";
 import { saveAnalysis, getLastAnalysis } from "../lib/storage";
 import type {

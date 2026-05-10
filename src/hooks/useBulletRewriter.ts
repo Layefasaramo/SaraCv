@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import toast from "react-hot-toast";
-import { rewriteBulletPoint } from "../lib/gemini";
+import { rewriteBulletPoint } from "../lib/llm";
 import type { BulletRewrite } from "../types";
 
 export function useBulletRewriter() {
