@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Download,
   AlertTriangle,
@@ -7,7 +6,6 @@ import {
   Target,
   MessageSquareQuote,
   Briefcase,
-  Sparkles,
 } from "lucide-react";
 import DropZone from "../ui/DropZone";
 import AtsScoreRing from "../ui/AtsScoreRing";

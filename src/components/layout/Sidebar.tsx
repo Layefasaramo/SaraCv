@@ -7,7 +7,6 @@ import {
   BookmarkCheck,
   User,
   Settings,
-  Sparkles,
   Moon,
   Sun,
 } from "lucide-react";
