@@ -110,10 +110,7 @@ export default function Dashboard({
             <div className={styles.resultsGrid}>
               <div className={styles.scoreCard}>
                 <h3 className={styles.cardTitle}>GENERAL ATS SCORE</h3>
-                <AtsScoreRing
-                  score={analysis.atsScore}
-                  percentileBeat={analysis.percentileBeat}
-                />
+                <AtsScoreRing score={analysis.atsScore} />
               </div>
 
               <div className={styles.jobsCard}>

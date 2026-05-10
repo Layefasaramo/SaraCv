@@ -2,13 +2,9 @@ import styles from "./AtsScoreRing.module.css";
 
 interface AtsScoreRingProps {
   score: number;
-  percentileBeat: number;
 }
 
-export default function AtsScoreRing({
-  score,
-  percentileBeat,
-}: AtsScoreRingProps) {
+export default function AtsScoreRing({ score }: AtsScoreRingProps) {
   const displayScore = Math.round(score);
 
   const radius = 70;
